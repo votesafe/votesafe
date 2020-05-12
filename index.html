@@ -159,7 +159,7 @@
         };
 
         setAsyncInterval(async() => {
-            var scan = await $.get("http://localhost:2222/scan");
+            var scan = await $.get("http://192.168.1.90:2222/scan");
             if (scan.scan !== null) {
                 window.location.href = ("./verify?scan=" + scan.scan);
             }
